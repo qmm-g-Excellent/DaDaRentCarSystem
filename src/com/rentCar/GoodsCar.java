@@ -3,7 +3,7 @@ package com.rentCar;
 /**
  * Created by qmm on 17-7-28.
  */
-public class GoodsCar extends Car implements LoadGoods{
+public class GoodsCar extends Car implements LoadGoods {
     private int goods;//私有属性，载货量
 
     //构造函数，构建实例化对象初始化
@@ -14,11 +14,13 @@ public class GoodsCar extends Car implements LoadGoods{
 
     @Override //覆盖接口中的抽象方法
     public void setGoods(int newGoods){
+
         this.goods = newGoods;
     }
 
     @Override //覆盖接口中的抽象方法
     public int getGoods(){
+
         return goods;
     }
 
@@ -30,6 +32,7 @@ public class GoodsCar extends Car implements LoadGoods{
     }
 
     public String toString(){
+
         return id +".  " + name + "\t" + price + "元／天　"+"载货："+getGoods()+"　吨";
     }
 }

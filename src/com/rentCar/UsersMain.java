@@ -24,7 +24,7 @@ public class UsersMain {
         System.out.println("您是否要租车？(1 是　　0否)　请选择");
 
         Scanner input = new Scanner(System.in);
-        int choice = input.nextInt();//调用键盘输入
+        int choice = input.nextInt();//调用键盘输入，nextInt()表示产生有效的整数
 
         if (choice != 1) {
             System.out.println("欢迎再次光临！");

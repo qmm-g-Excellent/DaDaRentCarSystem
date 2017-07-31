@@ -25,6 +25,7 @@ public class PersonCar extends Car implements LoadPerson {
 
     @Override   //覆盖接口中的抽象方法
     public void setPerson(int newPerson) {
+
         this.person = newPerson;
     }
 

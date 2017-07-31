@@ -14,25 +14,30 @@ public class PickUpCar extends Car implements LoadGoods, LoadPerson {
         setPerson(newPerson);
     }
 
+
+    @Override//覆盖接口中的抽象方法
+    public void setPerson(int newPerson) {
+
+        this.person = newPerson;
+    }
+
     @Override//覆盖接口中的抽象方法
     public int getPerson() {
         return person;
     }
 
     @Override//覆盖接口中的抽象方法
-    public void setPerson(int newPerson) {
-        this.person = newPerson;
+    public void setGoods(int newGoods) {
+
+        this.goods = newGoods;
     }
 
     @Override //覆盖接口中的抽象方法
-    public int getGoods() {
+    public int getGoods()
+    {
         return goods;
     }
 
-    @Override//覆盖接口中的抽象方法
-    public void setGoods(int newGoods) {
-        this.goods = newGoods;
-    }
 
     public void setProperties(int newId, String newName, int newPrice) {
         this.id = newId;
